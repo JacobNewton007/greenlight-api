@@ -15,10 +15,11 @@ import (
 	"github.com/JacobNewton007/greenlight/internal/mailer"
 	_ "github.com/lib/pq"
 )
+var (
+	version = "1.0.0"
+	buildTime string
+)
 
-const version = "1.0.0"
-
-var buildTime string
 
 type config struct {
 	port int
